@@ -1,0 +1,14 @@
+@import './settings.scss';
+@import './typography.scss';
+
+body {
+    margin: 0;
+    padding: 0;
+    background: $color-dark;
+    font-family: 'Poppins', sans-serif;
+    font-size: $base-font-size;
+    color: $color-light;
+    overflow-x: hidden;
+    width: 100%
+  }
+

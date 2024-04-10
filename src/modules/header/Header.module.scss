@@ -1,0 +1,95 @@
+@import '../../styles/settings.scss';
+
+.header {
+    margin: 0;
+    padding: 32px 165px 0 165px;
+    font-family: $base-font-text;
+    color: $base-font-color;
+    font-weight: 600;
+    font-style: normal;
+    line-height: normal;
+    align-items: space-between;
+    background-color: $color-light;
+    @media (max-width: 576px) {
+        padding: 2px;
+        height: auto;
+        justify-content: center;
+    }
+    a {
+        text-decoration: none;
+        color: $base-font-color;
+    }
+    &__mobileMenu {
+        @media (max-width: 576px) {
+            padding: 2px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            a, button {
+                margin: 0 auto;
+            }
+        }
+    }
+    button {
+        color: $main-green;
+    }
+}
+
+.logo {
+    margin-left: 16px;
+    margin-bottom: 16px;
+    height: 87px;
+    width: 102px;
+    @media (max-width: 768px) {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.header ul {
+    list-style-type: none;
+    margin-top: 16px;
+    justify-content: space-between;
+    padding: 30px 139px 30px 139px;
+    @media (max-width: 768px) {
+        display: block;
+        border-style: solid;
+        border-color: $main-green;
+        border-radius: 25px;
+        margin: 0px;
+        padding-left: 30%;
+    }
+    li {
+        padding: 8px;
+    }
+}
+
+.loginLink {
+    color: #31a05e;
+    margin-top: 0;
+    background-color: none;
+    @media (max-width: 768px) {
+        display: flex;
+        margin: 10px;
+    }
+}
+
+.dot {
+    height: 7px;
+    width: 7px;
+    margin: 8px auto 0 auto;
+    background-color: $color-light;
+    transform: translate(-200px);
+    transition:
+        transform 1s,
+        background-color 2s,
+}
+
+li:hover p {
+    background-color: $main-green;
+    transform: translate(0);
+}
+
+li:hover div {
+    color: $header-font-color;
+}
